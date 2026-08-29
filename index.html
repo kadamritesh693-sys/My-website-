@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Website</title>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f5f9;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home */
+        #home {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #2563eb, #06b6d4);
+            color: white;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            animation: zoom 1.5s;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Sections */
+        section {
+            padding: 45px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            animation: slideUp 1s;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #2563eb;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 20px;
+        }
+
+        /* Hobbies */
+        ul {
+            line-height: 2;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 8px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+
+        /* Social buttons */
+        .social {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Back to top */
+        #top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #2563eb;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* Animations */
+        @keyframes zoom {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .profile {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+
+        <!-- Put your photo in the same folder and name it profile.jpg -->
+                <h1>Welcome to My portfolio</h1>
+        <img src="a2.jpg" alt="profile Image" class="profile">
+
+      
+
+        <p>Hello! My name is <strong>Ritesh Kadam</strong>.</p>
+
+        <p>I am a Diploma Computer Science student.</p>
+
+        <a href="#about" class="btn">Learn More</a>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="card">
+
+            <ul>
+                <li>Hello! My name is Ritesh Kadam.</li>
+
+            <li>
+                I am a Diploma student.
+            </li>
+
+            <li>
+                I am interested in Computer Science and Web Development.
+            </li>
+
+            <li>
+                I am learning new programming languages and improving
+                my technical skills every day.
+            </li>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2>My Education</h2>
+
+        <div class="card">
+
+            <ul>
+                <li>Diploma in Computer Science and Engineering</li>
+                <li>Second Year</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="card">
+
+            <div class="skills">
+
+                <span class="skill">C Programming</span>
+
+                <span class="skill">C++</span>
+
+                <span class="skill">HTML</span>
+
+                <span class="skill">Python</span>
+
+                <span class="skill">Java</span>
+
+                <span class="skill">Web Development</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+
+        <h2>My Hobbies</h2>
+
+        <div class="card">
+
+            <ul>
+
+                <li>Learning new programming languages</li>
+
+                <li>Reading story books</li>
+
+                <li>Running and exercises</li>
+
+                <li>Learning new things daily</li>
+
+                <li>Watching movies</li>
+
+                <li>Learning music</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="card">
+
+            <p>
+                📞 Phone:
+                <a href="tel:9392364418">
+                    9392364418
+                </a>
+            </p>
+
+            <p>
+                📧 Email:
+                <a href="mailto:kadamritesh@gmail.com">
+                    kadamritesh@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+ 
+        <h2>My Address</h2>
+
+        <div class="card">
+
+            <ul>
+
+                <li>Village: Yellawath</li>
+
+                <li>Mandal: Tanoor</li>
+
+                <li>District: Nirmal</li>
+
+                <li>PIN Code: 504101</li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Social Media -->
+        <h2>Follow Me</h2>
+
+        <div class="social">
+
+            <a href="https://www.instagram.com/culprite_96k?igsi=MXdqNmtza2Y3Z3FraQ==" class="btn">Instagram</a>
+
+            <a href="#" class="btn">YouTube</a>
+
+            <a href="#" class="btn">GitHub</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Ritesh Kadam</p>
+
+        <p>My Personal Website</p>
+
+    </footer>
+
+
+    <!-- Back to Top -->
+    <a href="#home" id="top">↑</a>
+
+</body>
+
+</html>
