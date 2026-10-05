@@ -99,6 +99,28 @@ no<!DOCTYPE html>
             padding: 12px 18px;
             border-radius: 20px;
         }
+/* =========================
+           GALLERY
+        ========================== */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
 
         /* Hobbies */
         ul {
